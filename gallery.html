@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Prakash Rabidas</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/css-A.open-iconic-bootstrap.min.css+animate.css+owl.carousel.min.css+owl.theme.default.min.css+magnific-popup.css+aos.css+ionicons.min.css+flaticon.css+icomoon.css+style.css,Mcc.JXBXM67wEF.css.pagespeed.cf.5BjK5qPHzf.css">
+	<link rel="stylesheet" href="css/style.css"> </head>
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io//favicon-16x16.png">
+<link rel="manifest" href="images/favicon_io//site.webmanifest">
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container"> <a class="navbar-brand" href="index.html"><span>P</span>rakash</a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation"> <span class="oi oi-menu"></span> Menu </button>
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="index.html#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="index.html#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="index.html#blog-section" class="nav-link"><span>My Blog</span></a></li>
+					<li class="nav-item"><a href="index.html#contact-section" class="nav-link"><span>Contact</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section class="ftco-section" id="art-gallery-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Art Gallery</h1>
+					<h2 class="mb-4">My Art Gallery</h2> </div>
+			</div>
+			<div class="row d-flex">
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end"> <img id="myImg1" onclick="zoomImage(this.id, this.src);" href="#art-gallery-section" src="images/gallery/tiger.jpg" class="block-20"> </div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end"> <img id="myImg2" onclick="zoomImage(this.id, this.src);" href="#art-gallery-section" src="images/gallery/sktech_1.jpg" class="block-20"> </div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry"> <img id="myImg3" onclick="zoomImage(this.id, this.src);" href="#art-gallery-section" src="images/gallery/pen_1.jpg" class="block-20"> </div>
+				</div>
+			</div>
+			<div class="justify-content-center mb-5">
+				<div class="heading-section text-center ftco-animate">
+					<p><a href="gallery.html" class="btn btn-primary py-3 px-3">View More</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Art Galar Zoom Image Modal -->-->
+	<div id="myModal" class="modal"> <span class="close">&times;</span> <img class="modal-content" id="img01">
+		<div id="caption"></div>
+	</div>
+	<footer class="ftco-footer ftco-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<ul class="ftco-footer-social list-unstyled">
+						<li class="ftco-animate"><a href="#" target="_blank"><span class="icon-telegram"></span></a></li>
+						<li class="ftco-animate"><a href="https://twitter.com/Rabidas_Prakash" target="_blank"><span class="icon-twitter"></span></a></li>
+						<li class="ftco-animate"><a href="#" target="_blank"><span class="icon-facebook"></span></a></li>
+						<li class="ftco-animate"><a href="#" target="_blank"><span class="icon-instagram"></span></a></li>
+						<li class="ftco-animate"><a href="https://www.linkedin.com/in/prakash144/" target="_blank"><span class="icon-linkedin"></span></a></li>
+					</ul>
+					<p> Copyright &copy;
+						<script>
+						document.write(new Date().getFullYear());
+						</script> <a href="index.html">PrakashRabidas.in</a> - All Rights Reserved.</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen">
+		<svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"></circle>
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"></circle>
+		</svg>
+	</div>
+	<script>
+	// Get the modal
+	var modal = document.getElementById("myModal");
+
+	function zoomImage(imgId, imgSrc) {
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById(imgId);
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		modal.style.display = "block";
+		modalImg.src = imgSrc;
+		// console.log(imgId,modalImg,modalImg.src,imgSrc);
+		// captionText.innerHTML = this.alt;
+	}
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+		modal.style.display = "none";
+	}
+	</script>
+	<script src="js/5101-js-jquery.min.js.pagespeed.jm.xZH2zNe7lE.js"></script>
+	<script src="js/782-js-jquery-migrate-3.0.1.min.js+popper.min.js+bootstrap.min.js.pagespeed.jc.nnHgROMmL3.js"></script>
+	<script>
+	eval(mod_pagespeed_gb7yraQys5);
+	</script>
+	<script>
+	eval(mod_pagespeed_RGKn6SW32g);
+	</script>
+	<script>
+	eval(mod_pagespeed_h9rX52Z4Ti);
+	</script>
+	<script src="js/3378-js-jquery.easing.1.3.js+jquery.waypoints.min.js+jquery.stellar.min.js+owl.carousel.min.js.pagespeed.jc.snEhUXPIeE.js"></script>
+	<script>
+	eval(mod_pagespeed_rBeIzFEDC0);
+	</script>
+	<script>
+	eval(mod_pagespeed_m_l$l00rWq);
+	</script>
+	<script>
+	eval(mod_pagespeed_tOGOF_KHft);
+	</script>
+	<script>
+	eval(mod_pagespeed_g921z9MGXC);
+	</script>
+	<script src="js/7699-js-jquery.magnific-popup.min.js+aos.js+jquery.animateNumber.min.js+scrollax.min.js+main.js.pagespeed.jc.UEVqBn0ktu.js"></script>
+	<script>
+	eval(mod_pagespeed_P9B3uJNt60);
+	</script>
+	<script>
+	eval(mod_pagespeed_ACE0ce7fTR);
+	</script>
+	<script>
+	eval(mod_pagespeed_awRnuKerVJ);
+	</script>
+	<script>
+	eval(mod_pagespeed_iVOyfib5U4);
+	</script>
+	<script>
+	eval(mod_pagespeed_udwuFYXF0f);
+	</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-FFJ14QM7T8"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+	gtag('config', 'G-FFJ14QM7T8');
+	</script>
+</body>
+
+</html>
