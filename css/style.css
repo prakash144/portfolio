@@ -63,11 +63,15 @@
   .close {
     position: absolute;
     top: 100px;
-    right: 35px;
-    color: #f1f1f1;
+    right: 0px;
+    color: #101010;
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
+    z-index: 1;
+    background-color: #F1F1DC;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   
   .close:hover,
