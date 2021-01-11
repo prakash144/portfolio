@@ -106,6 +106,14 @@
 	object-fit: cover;
 	object-position: center right;
 }
+
+/* Gallery Border */
+.gallery_border img {
+   padding:1px;
+   border:1px solid #021a40;
+   background-color:#ffff;
+}
+
 /* 100% Image Width on Smaller Screens */
 
 @media only screen and (max-width: 700px) {
