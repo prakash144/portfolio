@@ -106,7 +106,17 @@
 	object-fit: cover;
 	object-position: center right;
 }
-
+/*  Icon for experience Section */
+.experience_icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 87%;
+    margin: 20px;
+    object-fit: cover;
+    object-position: center right;
+    margin-left: 0px;
+    margin-top: 66px;
+}
 /* Gallery Border */
 .gallery_border img {
    padding:1px;
